@@ -44,7 +44,7 @@ def main(argv):
 			else :
 				co += 1
 		if co == 3:
-			os.system('rm %s%03d.jpg' % (ndir, x))
+			os.system('rm %s%03d.jpg' % (ndir.encode('utf-8'), x))
 			break
 		x += 1
 
