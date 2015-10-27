@@ -1,2 +1,19 @@
-# GrepAcademiaHistorica
-抓取國史館資料
+# 國史館資料下載器
+
+安裝：
+
+```
+pip install Pillow
+```
+
+使用方式：
+
+```
+./picgrep.py 號碼 檔名
+```
+
+舉例：
+
+```
+./picgrep.py 001-012041-0029 黨務人員從事政治工作考試法（一）
+```
