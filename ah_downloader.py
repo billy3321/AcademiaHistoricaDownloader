@@ -19,7 +19,7 @@ def main():
   # identifier example:
   # '001-012041-0029'
   # '002-080200-00345-023'
-  directory = args.dir.decode('utf-8')
+  directory = args.dir
   if directory[-1] != '/':
     directory += '/'
   tokens = identifier.split('-')
@@ -38,7 +38,7 @@ def main():
     for tag in tags:
       sleep(randint(1,5))
       cmd = None
-      output = '%s%03d.jpg' % (directory.encode('utf-8'), num)
+      output = '%s%03d.jpg' % (directory, num)
       if len(identifier) == 15:
         cmd = "wget 'http://weba.drnh.gov.tw/resource/images/pic.jsp?downloadPic=/picture/WaterMark?url=http://172.16.1.111:8081//%s%03d%s.jpg' -O %s" % (url_path, num, tag, output)
       elif len(identifier) == 20:
